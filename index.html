@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Acme Prizes</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'/>
+    <script src='./app.js' defer></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+  color: dodgerBlue;
+}
+h1 {
+  border-bottom: solid 1px dodgerBlue;
+}
+h2 {
+  text-align: center;
+  margin: 50px 0;
+}
+#prizes{
+  display: flex;
+  justify-content: space-around;
+}
+
+.prize-card{
+  width: 100px;
+  height: 150px;
+  border: solid 1px dodgerBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prize-name{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerBlue;
+  color: white;
+  font-size: larger;
+}
+
+.prize-quantity-container{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.prize-quantity{
+  color: white;
+  background-color: dodgerBlue;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#customers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.customer-card {
+  width: 150px;
+  height: 200px;
+  border: solid 1px dodgerBlue;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-name {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: solid 1px dodgerBlue;
+}
+.customer-prizes {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.customer-prize {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+button {
+  background-color: dodgerBlue;
+  color: white;
+}
+
+button[disabled]{
+  background-color: #EFEFEF;
+}
+
+</style>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Acme Prizes</h1>
+      <h2>Prize Inventory</h2>
+      <div id='prizes'></div>
+      <h2>Customers</h2>
+      <div id='customers'></div>
+    </div>
+  </body>
+</html>
