@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  color: dodgerBlue;
+  font-family: sans-serif;
+}
+h1 {
+  border-bottom: solid 1px dodgerBlue;
+}
+h2 {
+  text-align: center;
+  margin: 50px 0;
+}
+#prizes{
+  display: flex;
+  justify-content: space-around;
+}
+
+.prize-card{
+  width: 100px;
+  height: 150px;
+  border: solid 1px dodgerBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prize-name{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerBlue;
+  color: white;
+  font-size: larger;
+}
+
+.prize-quantity-container{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.prize-quantity{
+  color: white;
+  background-color: dodgerBlue;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.done {
+  background-color: red;
+}
+
+#customers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.customer-card {
+  width: 150px;
+  height: 200px;
+  border: solid 1px dodgerBlue;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-name {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: solid 1px dodgerBlue;
+}
+.customer-prizes {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.customer-prize {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+button {
+  background-color: dodgerBlue;
+  color: white;
+}
+
+button[disabled]{
+  background-color: #EFEFEF;
+}
+
+@media screen and (max-width: 480px){
+  #prizes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prize-card {
+    margin-bottom: 20px;
+  }
+  #customers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer-card {
+    margin-bottom: 20px;
+  }
+}

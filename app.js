@@ -36,7 +36,7 @@ const renderPrizes = (data)=> {
             ${ prizeName } 
             </span>
             <div class='prize-quantity-container'>
-              <span class='prize-quantity'>
+              <span class='prize-quantity${ !data.prizes[prizeName] ? " done":""}'>
               ${ data.prizes[prizeName] }
               </span>
             </div>
