@@ -67,7 +67,7 @@ When the state is altered, the user interface should be re-drawn.
 </html>
 ```
 
-## Some important concepts which you will be using
+## Skills that will help you accomplish your goal
 - Using Object.keys to loop over the keys of an object.
 - Using template literals in order to generate the html for both prizes and customers.
 - Adding event handlers and capturing what was clicked by using the target properties of the event.
